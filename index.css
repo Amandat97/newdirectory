@@ -1,0 +1,224 @@
+html{
+    font-size: 6%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    justify-content: center;
+    color: #6b8592;
+}
+
+nav {
+    height: 30px;
+  }
+  
+
+nav, header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 75%;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.for {
+    border:0px;
+    outline:0px;
+    text-transform: uppercase;
+    color: grey;
+    margin: 3px;
+    padding: 5px 10px;
+    font-size: 11rem;
+    color: #6b8592;
+    vertical-align: top; 
+}
+
+ .nav-one {
+    flex-grow: 3;
+}
+  
+
+nav a {
+    margin: 5px;
+    padding: 10px 25px;
+    font-size: 11rem;
+    text-decoration: none;
+    color:  #6b8592;
+}
+
+  
+nav a:nth-child(0),
+nav a:nth-child(1) {
+  padding: 10px 15px;
+  opacity: 0.7;
+}
+
+nav a:nth-child(1) {
+  margin-right: 10px;
+}
+
+nav a:nth-child(2) {
+  color: white;
+  background: linear-gradient(80deg, rgba(25, 167, 237, 0.72), rgb(88, 144, 241));
+  border-radius: 4px;
+  padding: 10px 15px
+}
+
+header {
+  max-width: 75%;
+  width: 100%;
+  margin-top: 70px;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    width: 100%;
+}
+  
+.search-section {
+    flex-grow: 1;
+    margin: 0px 10px;
+}
+
+
+.search input[type=text]:focus {
+    outline: 0;
+}
+
+.search input[type=text],
+.search select {
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  font-size: 25rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #6b8592;
+  background: transparent;
+  padding: 20px;
+}
+
+
+.line {
+  border-bottom: 1px solid rgba(187, 187, 187, 0.62);
+}
+
+.search p {
+  color: rgba(187, 187, 187, 0.62);
+  font-size: 18rem;
+  text-align: center;
+}
+
+.search-button {
+  margin: 0;
+  padding: 26px 0px;
+  position: relative;
+  left: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+main {
+  display: flex;
+  max-width: 1030px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  font-size: 16rem;
+  margin-top: 50px;
+  padding: 0;
+}
+
+main a {
+  padding: 0;
+  margin: 0;
+  color: #677981;
+
+}
+
+
+.mountains {
+  box-shadow: 0 20px 100px rgba(87, 85, 85, 0.678);
+  border-radius: 5px;
+  height: 250px;
+  background: #FFFFFF;
+  padding: 0;
+  margin: 15px;
+  transition: .3s;
+  transform: scale(1.01,1.01);
+  width: 30%;
+}
+
+.mountains:nth-child(1) {
+    max-width: 63%;
+    width: 100%;
+  }
+
+#for-sale{
+  color: #35444d;
+  transition: .3s;
+}
+
+#ad {
+  opacity: 0.9;
+  transition: .3s
+}
+
+.mountains p {
+  padding: 0;
+  margin: 0;
+}
+
+.details {
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  align-items: center;
+  height: 35%;
+}
+
+.photo {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  height: 50%;
+  margin: 0;
+  padding: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: white;
+  padding: 30px 30px 20px 30px;
+  }
+
+.mountains:nth-child(1) .photo {
+    background-image: url("images/Mount-Everest.jpg");
+}
+
+.mountains:nth-child(2) .photo {
+    background-image: url("images/ryan-schroeder-Gg7uKdHFb_c-unsplash.jpg");
+}
+
+.mountains:nth-child(3) .photo {
+    background-image: url("images/nathan-anderson-roZgc7SXXmI-unsplash.jpg");
+}
+
+.mountains:nth-child(4) .photo {
+    background-image: url("images/jeremy-bishop-dR_q93lfaTw-unsplash.jpg");
+}
+
+.mountains:nth-child(5) .photo {
+    background-image: url("images/antonio-grosz-OIzy-UubqrE-unsplash.jpg");
+}
+
